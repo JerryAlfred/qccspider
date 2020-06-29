@@ -1,0 +1,526 @@
+#vipModal .modal-dialog,#svipModal .modal-dialog,#stayVipModal .modal-dialog{
+    width: 780px;
+}
+#vipModal .modal-content,#svipModal .modal-content,#stayVipModal .modal-content{
+    padding-bottom: 25px;
+    border-radius: 0px;
+    text-align: center;
+}
+#vipModal .close,#svipModal .close{
+    color: #FFF;
+    font-size: 40px;
+    opacity: 0.8;
+    font-weight: normal;
+    position: absolute;
+    right: 10px;
+}
+
+.vip-top{
+  padding-top: 5px;
+  background: url('../images/vip_modal_bg2@2x.png') center top;
+  background-size: 780px 239px;
+  background-repeat: no-repeat;
+  line-height: 1.8;
+}
+.vip-buy-panel{
+  background: #fff;
+  width: 680px;
+  height: auto;
+  border: solid 1px #eee;
+  border-radius: 6px;
+  margin:20px auto 20px auto;
+  padding-bottom: 10px;
+}
+.vip-year-list{
+  margin:20px auto 0px auto;
+  width: 554px;
+}
+.vip-year-list-in{
+    margin:20px auto;
+    width: 554px;
+}
+.vip-year-list-in-history{
+    margin:20px auto;
+    width: 554px;
+}
+.vip-kuang{
+  width: 114px;
+  height: 70px;
+  float: left;
+  border: solid 2px #CDCDCD;
+  margin-left: 35px;
+  margin-right: 35px;
+  cursor: pointer;
+  position: relative;
+}
+.vip-kuang .price{
+  margin-top: 8px;
+  color: #666;
+}
+.vip-kuang .price>span{
+  font-size: 18px;
+}
+.vip-kuang .origin-price{
+  margin-top: -3px;
+  color: #999;
+  text-decoration:line-through;
+}
+.vip-kuang.active{
+  border:solid 2px #F9552A;
+  cursor: default;
+}
+.vip-kuang .price>span{
+    color: #F9552A;
+}
+.vip-kuang.active .price>span{
+  color: #F9552A;
+}
+.vip-btn{
+  display: block;
+  width: 242px;
+  background:#F9552A;
+  border-radius: 2px;
+  font-size: 18px;
+  color: #fff !important;
+  line-height: 44px;
+  margin:auto;
+}
+.vip-publicity{
+  color: #999999;
+  margin-top: 13px;
+}
+.vip-container{
+  width: 680px;
+  margin:auto;
+}
+.vip-container .table-caption{
+    border-bottom: solid 1px #E9E9E9;
+    text-align: left;
+}
+.vip-container .table-caption img{
+    display: inline-block;
+    padding-bottom: 6px;
+    border-bottom: solid 2px #128bed;
+}
+.vip-container .table-caption span{
+    font-size: 13px;
+    color: #666666;
+    display: inline-block;
+    padding-left: 16px;
+    font-weight: 600;
+}
+.vip-container .table-caption a{
+    font-size: 13px;
+    color: #128bed;
+    padding-top: 8px;
+}
+.vip-table td{
+    text-align: left;
+    padding: 0px 10px !important;
+    height: 42px;
+    border-top: none !important;
+    font-size: 13px;
+    font-weight: 400;
+    vertical-align: middle !important;
+}
+.vip-table td a{
+    color: #788288
+}
+.vip-table tr:nth-child(1)>td{
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+}
+.vip-table > tbody > tr:nth-child(odd) > td, .vip-table > tbody > tr:nth-child(odd) > th {
+    background-color: #fff !important;
+}
+.vip-table > tbody > tr:nth-child(even) > td, .vip-table > tbody > tr:nth-child(even) > th {
+    background-color: #F5F9FF !important;
+}
+.vip-table .x{
+  font-size: 28px;font-weight: normal; color:#999;
+}
+.vip-text-re{
+  color: #FF2550 !important;
+}
+.vip-rec{
+    position: absolute;
+    background:url(../images/vip_rec.png);
+    background-size: 50px 18px;
+    width: 50px;
+    height: 18px;
+    top: -10px;
+    left: -2px;
+}
+.vip-year-list.cert{
+    width: 390px;
+}
+.vip-year-list.cert .vip-kuang{
+    width: 124px;
+}
+
+.vip-year-list.cert .name{
+    font-size: 18px;
+    color: #F1582F;
+    margin-top: 8px;
+}
+.vip-year-list.cert .name>span{
+    background-image: url(/material/theme/chacha/cms/pro/img/certpay_sign3.png);
+    background-size: 80px 20px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 3px;
+    left: -3px;
+}
+.vip-year-list.cert .name>.sign34{
+    background-position: -40px 0px;
+}
+.vip-year-list.cert .name>.sign35{
+    background-position: -20px 0px;
+}
+.vip-year-list.cert .price{
+    margin-top: -5px;
+    color: #999;
+}
+.vip-year-list.cert .vip-kuang.disable{
+  background: #F6F6F6;
+  cursor:not-allowed; 
+  
+}
+.vip-year-list.cert .vip-kuang.disable .name{
+  color: #999;
+}
+.vip-year-list.cert .vip-kuang.disable .name>.sign34{
+  background-position: -60px 0px;
+}
+.vip-year-list.cert .vip-kuang.disable .vip-rec{
+  display: none;
+}
+.vip-pay-info.cert .pre{
+  text-align: left;
+  
+}
+.vip-pay-info.cert .payduction{
+  color: #999;
+  width: 200px;
+}
+
+.certpay-demo{
+  margin-top: 25px;
+  height: 340px;
+}
+.certpay-demo>img{
+  width: 682px;
+}
+@media only screen {
+    .vip-rec { background-image: url('../images/vip_rec@2x.png'); }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    .vip-rec { background-image: url('../images/vip_rec@2x.png'); }
+}
+@media only screen and (min-device-pixel-ratio: 2) {
+    .vip-rec { background-image: url('../images/vip_rec@2x.png'); }
+}
+@media only screen and (min-device-pixel-ratio: 3) {
+    .vip-rec { background-image: url('../images/vip_rec@2x.png'); }
+}
+@media print and (min-resolution: 144dpi) {
+    .vip-rec { background-image: url('../images/vip_rec@2x.png'); }
+}
+.vip-title{
+  text-align: center;
+  color: #fff;
+}
+.vip-title h2{
+  font-size: 18px;
+  font-weight: normal;
+}
+.vip-title h3{
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 15px;
+}
+.vip-title h3 a{
+    font-size: 14px;color:#F5A623;margin-left:10px;
+}
+/*replace .vip-title h2*/
+.vip-title .title{
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: inherit;
+    line-height: 1.1;
+    color: inherit;
+}
+/*replace .vip-title h3*/
+.vip-title .sub-title{
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-family: inherit;
+    line-height: 1.1;
+    color: inherit;
+}
+/*replace .vip-title h3 a*/
+.vip-title .sub-title a{
+    font-size: 14px;color:#F5A623;margin-left:10px;
+}
+.vip-pay-container{
+  width: 680px;
+  margin: 25px auto 20px auto;
+}
+.vip-payj-left{
+  float: left;
+  width: 185px;
+  margin-right: 20px;
+}
+.vip-payj-left p{
+  text-align: left;
+  color: #999;
+  font-size: 14px;
+  line-height: 1.3;
+}
+.vip-payj-qrcode{
+  float: left;
+  width: 475px;
+  height: 280px;
+  background: #F3F9FE;
+}
+.vip-pay-info{
+  width: 554px;
+  margin:auto;
+  font-size: 16px;
+  margin-top: 20px;
+  
+}
+.vip-pay-info .clearfix{
+    position:relative;
+    margin:5px 0px;
+}
+.vip-pay-info .pre{
+  width: 100px;
+  display: inline-block;
+  text-align: right;
+}
+.vip-pay-info .after{
+  width: 380px;
+  display: inline-block;
+  text-align: right;
+}
+.vip-pay-info .payprice{
+  color: #FD485E;
+}
+.vip-pay-info .payprice.text-gray{
+  color: #999;
+}
+.vip-pay-info .drop{
+  cursor: pointer;
+  color: #999;
+}
+.pay-type-wx,.pay-type-ali,.pay-type-left,.pay-type-points{
+  width: 185px;
+  height: 60px;
+  display:inline-block;
+  background-image: url(/material/theme/chacha/cms/v2/images/pay_btn_imgs.png);
+  background-size: 370px 240px;
+  cursor: pointer;
+}
+.pay-type-wx{
+  background-position:0px 0px;
+}
+.pay-type-wx.active{
+  background-position:-185px 0px;
+}
+.pay-type-ali{
+  background-position:0px -60px;
+}
+.pay-type-ali.active{
+  background-position:-185px -60px;
+}
+
+.pay-type-left{
+  background-position:0px -120px;
+}
+.pay-type-left.active{
+  background-position:-185px -120px;
+}
+.pay-type-points{
+  background-position:0px -180px;
+}
+.pay-type-points.active{
+  background-position:-185px -180px;
+}
+.pay-load{
+    display: block;
+    position: absolute;
+    top: 52px;
+    left: 52px;
+    z-index: 60;
+}
+.qrcode-div{
+    margin-top: 40px;
+}
+.wx_pay_box{
+    position: relative;
+    width:323px;
+    height:223px;
+    background:url('/material/theme/chacha/cms/pro/img/vip_payqrcodek2.png');
+    background-size: 323px 223px;
+    margin-left: 120px;
+    margin-top: 30px;
+    
+}
+.wx_pay_img{
+    position: relative;
+    top: 13px;
+    left: 11px;
+    width:160px;height:160px;
+}
+.ali_pay_box{
+    position: relative;
+    width:323px;
+    height:223px;
+    background:url('/material/theme/chacha/cms/pro/img/vip_payqrcodek3.png');
+    background-size: 323px 223px;
+    margin-left: 120px;
+    margin-top: 30px;
+    display: none;
+    text-align: left;
+}
+.ali_pay_frame{
+    position: relative;
+    top: 13px;
+    left: 11px;
+    width:160px;height:160px;
+}
+.left_pay_box,.points_pay_box{
+  padding-top: 20px;
+  display: none;
+  text-align: center;
+}
+.left_pay_box img, .points_pay_box img{
+  width: 200px;
+}
+.left_pay_box p, .points_pay_box p{
+  color: #666;
+}
+.coupon-drop{
+  display: none;
+}
+.coupon-drop .dropdown-menu{
+  width: 380px;
+  padding: 0px;
+  margin-top: 0px;
+    max-height: 412px;
+    overflow-y: auto;
+    left: 140px;
+
+    *width:420px;
+    *left:100px;
+    #width:420px;
+    #left:100px;
+    width:420px\9;
+    left:100px\9;
+    width:420px\0;
+    left:100px\0;
+}
+.coupon-drop li{
+  text-align: left;
+  font-size: 14px;
+  color: #333;
+}
+.coupon-drop .coupon-type{
+  padding: 10px 15px;
+  display: inline-block;
+  color: #333;
+}
+.coupon-drop .coupon-item{
+  padding: 10px 15px;
+}
+.coupon-drop .coupon-item .price{
+  color: #128bed;
+  border:solid 2px #128bed;
+  padding: 6px 5px;
+  width: 50px;
+  text-align: center;
+  font-size: 20px;
+  margin-right: 12px;
+  margin-top: 5px;
+  background: #F3F9FE;
+  font-size: 14px;
+
+}
+
+.coupon-drop .coupon-item .title{
+  color: #333;
+  font-size: 14px;
+}
+.coupon-drop .coupon-item .des{
+  color: #666;
+  font-size: 12px;
+}
+.coupon-drop .coupon-item .time{
+  color: #999;
+  font-size: 12px;
+}
+.coupon-drop .coupon-item .pull-right{
+    position: absolute;right:10px;
+}
+.coupon-drop .coupon-item .check{
+    width: 24px;
+    height: 24px;
+    background: url(../images/ic_radio_button_off.png);
+    background-size: 24px 24px;
+    margin-top: 18px;
+}
+.coupon-drop .coupon-item:hover{
+  background: #f6f6f6;
+}
+.coupon-drop .coupon-item.disable{
+  cursor: not-allowed;
+}
+.coupon-drop .coupon-item.disable .price{
+  border-color: #eee;
+  color: #999;
+    background: #fefefe;
+}
+.coupon-drop .coupon-item.active .check{
+    background-image: url(../images/ic_radio_button_on.png);
+}
+
+.vip-pay-container .step1 img{width:680px;height:315px;object-fit: cover;}
+.vip-demo-link{line-height: 20px;color:#999999;font-size:12px;position: absolute;bottom:13px;left:0px;width:100%;text-align: center;}
+.vip-insert-wrap .vip-demo-link{display: block;position: relative;line-height: 20px;top:15px;}
+.vip-demo-link:hover{color:#128bed;}
+.vip-demo-link.show{display: block;}
+.vip-pay{color: #F9552A}
+.vip-iframe{width:888px;height:838px;border:none;overflow: hidden;}
+.demo-img{width:680px;height:315px;}
+
+.day-price{
+  font-size: 12px;
+  color: #666;
+}
+.day-price>span{
+  color: #FF8266;
+}
+
+.svip .vip-btn{
+  background:#D2A874;
+}
+
+.svip .vip-kuang .price>span,.svip .vip-kuang.active .price>span{
+  color: #DDBD87;
+}
+
+.svip .vip-kuang.active{
+  border-color: #DDBD87;
+}
+
+.svip .day-price>span{
+  color: #DDBD87;
+}

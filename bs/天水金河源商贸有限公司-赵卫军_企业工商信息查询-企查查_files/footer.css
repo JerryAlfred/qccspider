@@ -1,0 +1,217 @@
+/*#loginModal .modal-dialog{
+    width: 400px;
+    margin: 30px auto;
+}*/
+
+#noteEditModal .modal-dialog{
+    width: 500px;
+    margin: 30px auto;
+}
+
+#loginModalBody{
+    width: 100%;
+    height: 450px;
+}
+.divisionLine{
+    border-top: 1px solid #e5e5e5;
+    margin: 12px 0px;
+}
+.fixed-logo{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #ffffff;
+    width: 100%;
+    box-shadow: 0px -2px 8px #dbdbdb;
+    box-sizing: border-box;
+    z-index: 999;
+}
+
+.fixed-logo div{
+    margin-left: 35px;
+}
+
+.logo-img{
+    width: 100%;
+    float: left;
+}
+.logo-title{
+    color: #333333;
+    font-size: 12px;
+}
+.logo-content{
+    color: #666666;
+    font-size: 10px;
+}
+
+.weixin{
+    color: #ffffff;
+    background: #3CB033;
+    position: absolute;
+    right: 80px;
+    top: 15px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+.weixin img{
+    width: 20px;
+    padding-right: 5px
+}
+
+#logo-space{
+    height: 80px;
+}
+
+
+@media screen and (min-device-width: 375px) and (max-device-width: 667px){
+   
+    .weixin{
+        color: #ffffff;
+        background: #3CB033;
+        position: absolute;
+        right: 100px;
+        top: 20px;
+        padding: 5px 10px;
+        border-radius: 3px;
+        text-decoration: none;
+        box-sizing: border-box;
+        font-size: 15px;
+        height: 30px;
+        line-height: 20px;
+    }
+
+    .weixin img{
+        width: 25px;
+        padding-right: 5px;
+        vertical-align: bottom;
+        margin-bottom: 2px;
+    }
+
+}
+
+/*底部广告*/
+@keyframes popleft {0%   {margin-left: -100%;} 100% {margin-left: 0px;} } 
+@-moz-keyframes popleft {0%   {margin-left: -100%;} 100% {margin-left: 0px;} } 
+@-webkit-keyframes popleft {0%   {margin-left: -100%;} 100% {margin-left: 0px;} } 
+
+@keyframes popRight {0%   {margin-left: 0px;} 100% {margin-left: -100%;} } 
+@-moz-keyframes popRight {0%   {margin-left: 0px;} 100% {margin-left: -100%;} } 
+@-webkit-keyframes popRight {0%   {margin-left: 0px;} 100% {margin-left: -100%;} }
+                    
+
+.bottomSuspend{ 
+    width: 100%; 
+    width: 100vw;
+    position: fixed;
+    bottom: 0px;
+    z-index: 10;
+    background:url(../images/app11.1.0@2x.png) center bottom no-repeat;
+    background-size: 1920px 115px;
+    height: 115px;
+    margin-left: -100%;
+    margin-left: -100vw;
+} 
+
+.bottomSuspend .attendDownload{
+    cursor: pointer;
+    width: 1136px;
+    position: absolute;
+    bottom: 0px;
+    height: 90px;
+    left: 50%;
+    margin-left: -520px;
+}
+
+
+.acction-left{
+    z-index:1080;
+    margin-left: 0px !important; animation: popleft 0.5s; -moz-animation: popleft 0.5s; -webkit-animation: popleft 0.5s; 
+} 
+.acction-right{
+    margin-left: -100% !important; 
+    margin-left: -100vw !important; 
+    animation: popRight 0.5s; -moz-animation: popRight 0.5s; -webkit-animation: popRight 0.5s; 
+} 
+
+.bottomSuspend .closeSuspend{
+    position: absolute; top: 50px; right: 20px;
+    width: 40px;
+    height: 40px;
+    background: url(../images/app10.0.2_close.png) no-repeat center center;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+.bottomSuspend .closeSuspend:hover{ 
+    /*transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);*/
+}
+
+.openSuspend{
+    z-index: 10;
+    position: fixed; bottom: 70px; left: 0px;
+    width: 66px;
+    height: 70px; 
+    background: url(/material/theme/chacha/cms/v2/images/footer_app2_banner_icon.png) no-repeat center center;
+    background-size: 66px 70px;
+    display: none; 
+}
+
+@media print {
+    a[href]:after {
+        content: none !important;
+    }
+    .bottomSuspend {
+        display: none;
+    }
+}
+
+/*手机端打开 底部链接*/
+.bottom-bar{
+    position: fixed;
+    z-index: 9;
+    bottom: 0px;
+    background: white;
+    border-top: solid 1px #f1f3f4;
+    padding-bottom: 1px;
+    width: 100%;
+    height: 68px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.bottom-bar .icon{
+    width: 40px;
+}
+.bottom-bar .bd{
+    flex: 1;
+    padding-left: 15px;
+}
+.bottom-bar .download{
+    display: block;
+    background: #128bed;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    height: 36px;
+    width: 90px;
+    border-radius: 2px;
+    font-size: 16px;
+}
+.bottom-bar .qcc-t2 {
+    font-size: 12px;
+    color: #999;
+}
+
+@media (min-width: 768px){
+    .bottom-bar{
+        display: none;
+    }
+}
