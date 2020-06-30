@@ -50,10 +50,7 @@ def craw(url,key_word,x):
                 temp_r_phone = com_all_info_array[i].select('td')[2].select('p')[1].select('.m-l')[0].text.strip('电话：')    #获取法人手机号
                 temp_g_addr = com_all_info_array[i].select('td')[2].select('p')[2].text.strip().strip('地址：')    #获取公司地址
                 temp_g_state = com_all_info_array[i].select('td')[3].select('.nstatus.text-success-lt.m-l-xs')[0].text.strip()  #获取公司状态
-                
-                gudong = com_all_info_array[i].select('td')[3].select('.nstatus.text-success-lt.m-l-xs')[0].text.strip()  #获取公司状态 
-
-
+                 
                 g_name_list.append(temp_g_name)
                 g_tag_list.append(temp_g_tag)
                 r_name_list.append(temp_r_name)

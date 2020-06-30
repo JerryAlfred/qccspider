@@ -20,8 +20,6 @@ def craw(url):
 'If-None-Match':'"59*******"',
 'Cache-Control':'max-age=0',
 
-
-
 }
     response = requests.get(url,headers = headers)
     if response.status_code != 200:
